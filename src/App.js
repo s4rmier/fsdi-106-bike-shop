@@ -1,14 +1,14 @@
 import "./App.css";
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
+import Catalog from "./pages/catalog";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Navigation />
+      <Catalog />
       <Footer />
     </div>
   );
 }
-
-export default App;

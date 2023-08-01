@@ -2,7 +2,7 @@ export default function Navigation() {
   return (
     <nav>
       <div className="nav--container flex-row justify-sb">
-        <div className="brand-container flex-row align">
+        <div className="nav-brand flex-row align">
           <img src="/images/logo.svg" alt="" />
           <h1>Urban Bikes</h1>
         </div>
@@ -20,6 +20,9 @@ export default function Navigation() {
           </li>
           <li>
             <i className="fa-brands fa-yelp"></i>
+          </li>
+          <li>
+            <i className="fa-brands fa-pinterest-p"></i>
           </li>
         </ul>
         <i id="cart" className="fa-solid fa-cart-shopping flex-row align"></i>
