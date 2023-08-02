@@ -4,11 +4,12 @@ export default function Navigation() {
       <div className="nav--container flex-row justify-sb">
         <div className="nav-brand flex-row align">
           <img src="/images/logo.svg" alt="" />
-          <h1>Urban Bikes</h1>
+          <h1>Urban Bikes Co</h1>
         </div>
         <ul className="nav-links align justify flex-row">
           <li>Home</li>
-          <li>Catalog</li>
+          <li className="active">Catalog</li>
+          <li>Events</li>
           <li>About</li>
         </ul>
         <ul className="nav-social align flex-row">

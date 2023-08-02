@@ -74,10 +74,18 @@ button.button {
   border: 1px solid var(--bg-color-pri);
 }
 
+.active {
+  padding-bottom: 0.125rem;
+  border-bottom: 0.2rem solid var(--bg-color-pri);
+}
+
 @media screen and (min-width: 960px) {
   nav {
     background-color: #f2f7f2;
-    padding: 0.25rem 1rem;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    width: 100vw;
+    box-shadow: 0.1px 0.1px 20px rgba(56, 55, 55, 0.2);
   }
   nav .nav--container {
     width: 95%;
@@ -111,7 +119,55 @@ button.button {
     font-size: 1.25rem;
   }
   main {
-    height: 62vh;
+    padding-top: 5rem;
+  }
+  main div.catalog-container {
+    width: 95%;
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0rem 1rem;
+  }
+  main div.catalog-container aside {
+    width: 100%;
+  }
+  main div.catalog-container div.product-list {
+    flex-wrap: wrap;
+  }
+  main div.catalog-container div.product-list figure {
+    margin: 1rem;
+    flex-basis: calc(30% - 1rem);
+    width: 300px;
+    background-color: #f2f7f2;
+    border-radius: 10px;
+  }
+  main div.catalog-container div.product-list figure figcaption {
+    padding: 1rem;
+  }
+  main div.catalog-container div.product-list figure figcaption h4 {
+    font-family: var(--font-main);
+    font-size: 0.75rem;
+  }
+  main div.catalog-container div.product-list figure figcaption i {
+    font-size: 0.65rem;
+    font-weight: 600;
+  }
+  main div.catalog-container div.product-list figure figcaption h2 {
+    margin: 0.5rem 0rem;
+    font-family: var(--font-brand);
+  }
+  main div.catalog-container div.product-list figure figcaption div h3 {
+    font-family: var(--font-brand);
+    font-weight: 100;
+  }
+  main div.catalog-container div.product-list figure figcaption div div.quantity-picker {
+    margin: 0.5rem 0rem;
+  }
+  main div.catalog-container div.product-list figure figcaption div div.quantity-picker label {
+    font-family: var(--font-brand);
+    margin: 0rem 0.35rem;
+  }
+  main div.catalog-container div.product-list figure figcaption div div.quantity-picker button.qty-btn {
+    padding: 0rem 0.35rem;
   }
   footer {
     padding: 1rem;
@@ -137,20 +193,27 @@ button.button {
   footer div.footer-container div.footer-hours ul li {
     font-size: 1rem;
   }
+  footer div.footer-container div.footer-subscribe {
+    max-width: 25%;
+  }
   footer div.footer-container div.footer-subscribe h2 {
     font-family: var(--font-brand);
     letter-spacing: 0.05rem;
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
+  footer div.footer-container div.footer-subscribe p {
+    margin-bottom: 1rem;
+  }
   footer div.footer-container div.footer-subscribe input {
+    width: 60%;
     font-family: var(--font-main);
     margin-right: 0.5rem;
     padding: 0.25rem 0.5rem;
     border: 1px solid var(--bg-color-pri);
   }
   footer div.footer-container div.footer-subscribe ul.footer-social {
-    margin: 1rem 0rem;
+    margin-top: 0.5rem;
   }
   footer div.footer-container div.footer-subscribe ul.footer-social li {
     font-size: 1.5rem;

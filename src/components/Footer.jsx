@@ -43,6 +43,7 @@ export default function Footer() {
         </div>
         <div className="footer-subscribe flex-col">
           <h2>Subscribe</h2>
+          <p>Subscribe for latest news, events, and promotions!</p>
           <div className="flex-row">
             <input type="text" placeholder="Enter your e-mail" />
             <button className="button">Submit</button>
