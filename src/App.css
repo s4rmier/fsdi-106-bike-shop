@@ -84,6 +84,7 @@ button.button {
     background-color: #f2f7f2;
     padding: 0.5rem 1rem;
     position: fixed;
+    z-index: 9;
     width: 100vw;
     box-shadow: 0.1px 0.1px 20px rgba(56, 55, 55, 0.2);
   }
@@ -109,6 +110,7 @@ button.button {
   nav .nav--container ul.nav-social i {
     cursor: pointer;
     font-size: 1.5rem;
+    color: #ff8710;
   }
   nav .nav--container ul.nav-links li:hover,
   nav .nav--container ul.nav-social li:hover {
@@ -134,13 +136,31 @@ button.button {
     flex-wrap: wrap;
   }
   main div.catalog-container div.product-list figure {
+    position: relative;
     margin: 1rem;
     flex-basis: calc(30% - 1rem);
-    width: 300px;
-    background-color: #f2f7f2;
+    width: 360px;
+    background-color: white;
     border-radius: 10px;
+    padding: 1rem;
+  }
+  main div.catalog-container div.product-list figure img {
+    margin-bottom: 1rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  main div.catalog-container div.product-list figure .sale-badge {
+    position: absolute;
+    font-family: var(--font-sec);
+    background-color: #ff7e00;
+    font-size: 0.85rem;
+    padding: 0.35rem;
+    left: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
   main div.catalog-container div.product-list figure figcaption {
+    background-color: #f2f7f2;
     padding: 1rem;
   }
   main div.catalog-container div.product-list figure figcaption h4 {
@@ -150,10 +170,19 @@ button.button {
   main div.catalog-container div.product-list figure figcaption i {
     font-size: 0.65rem;
     font-weight: 600;
+    color: #ff7e00;
   }
   main div.catalog-container div.product-list figure figcaption h2 {
     margin: 0.5rem 0rem;
     font-family: var(--font-brand);
+  }
+  main div.catalog-container div.product-list figure figcaption span.discounted-price {
+    font-family: var(--font-main);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 0.25rem;
+    color: #ff7e00;
   }
   main div.catalog-container div.product-list figure figcaption div h3 {
     font-family: var(--font-brand);
@@ -181,6 +210,10 @@ button.button {
   }
   footer div.footer-container div.footer-brand img {
     width: 5rem;
+  }
+  footer div.footer-container div.footer-contact,
+  footer div.footer-container div.footer-hours {
+    max-width: 25%;
   }
   footer div.footer-container div.footer-contact h2,
   footer div.footer-container div.footer-hours h2 {
@@ -212,11 +245,15 @@ button.button {
     padding: 0.25rem 0.5rem;
     border: 1px solid var(--bg-color-pri);
   }
+  footer div.footer-container div.footer-subscribe button {
+    background-color: #ff7e00;
+  }
   footer div.footer-container div.footer-subscribe ul.footer-social {
     margin-top: 0.5rem;
   }
   footer div.footer-container div.footer-subscribe ul.footer-social li {
     font-size: 1.5rem;
     margin: 0rem 0.5rem;
+    color: #ff7e00;
   }
 }/*# sourceMappingURL=App.css.map */

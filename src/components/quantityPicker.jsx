@@ -4,13 +4,11 @@ export default function QuantityPicker() {
   let [quantity, setQuantity] = useState(0);
 
   function increase() {
-    console.log("increase");
     let val = quantity + 1;
     setQuantity(val);
   }
 
   function decrease() {
-    console.log("decrease");
     if (quantity === 0) return;
     let val = quantity - 1;
     setQuantity(val);
