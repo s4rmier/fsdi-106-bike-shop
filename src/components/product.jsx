@@ -31,7 +31,7 @@ export default function Product(props) {
             </span>
           </div>
 
-          <i className="fa-solid fa-star"> 4.5</i>
+          <i className="fa-solid fa-star"> {props.data.stars}</i>
         </div>
 
         <h2>{props.data.name}</h2>
