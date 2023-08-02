@@ -33,9 +33,10 @@ export default function Product(props) {
 
           <i className="fa-solid fa-star"> 4.5</i>
         </div>
+
         <h2>{props.data.name}</h2>
 
-        <div className="flex-row justify-sb align">
+        <div className="prod-counter flex-row justify-sb align">
           <h3>Sizes: {props.data.sizes}</h3>
           <QuantityPicker />
         </div>

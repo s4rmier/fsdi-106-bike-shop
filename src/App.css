@@ -6,6 +6,7 @@
   list-style-type: none;
   text-decoration: none;
   line-height: 1.25;
+  scroll-behavior: smooth;
   --bg-color-pri: #18114a;
   --bg-color-sec: #383737;
   --bg-color-alt: #a9adb2;
@@ -45,9 +46,84 @@ body .container {
   margin: 0 auto;
 }
 
+nav {
+  background-color: #f2f7f2;
+  width: 100%;
+}
 nav .nav--container {
   color: var(--bg-color-pri);
   font-family: var(--font-brand);
+}
+nav .nav--container div.nav-brand img {
+  width: 1.25rem;
+  margin: 0rem 0.5rem;
+}
+
+main div.catalog-container div.product-list {
+  flex-wrap: wrap;
+}
+main div.catalog-container div.product-list figure {
+  position: relative;
+  margin: 1rem;
+  width: 360px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+}
+main div.catalog-container div.product-list figure img {
+  height: 140px;
+  margin-bottom: 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main div.catalog-container div.product-list figure .sale-badge {
+  position: absolute;
+  font-family: var(--font-sec);
+  background-color: #ff7e00;
+  font-size: 0.85rem;
+  padding: 0.35rem;
+  left: 1rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+main div.catalog-container div.product-list figure figcaption {
+  background-color: #f2f7f2;
+  padding: 1rem;
+}
+main div.catalog-container div.product-list figure figcaption h4 {
+  font-family: var(--font-main);
+  font-size: 0.75rem;
+}
+main div.catalog-container div.product-list figure figcaption i {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #ff7e00;
+}
+main div.catalog-container div.product-list figure figcaption h2 {
+  margin: 0.5rem 0rem;
+  font-family: var(--font-brand);
+}
+main div.catalog-container div.product-list figure figcaption span.discounted-price {
+  font-family: var(--font-main);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 0.25rem;
+  color: #ff7e00;
+}
+main div.catalog-container div.product-list figure figcaption div.prod-counter h3 {
+  font-family: var(--font-brand);
+  font-weight: 100;
+}
+main div.catalog-container div.product-list figure figcaption div.prod-counter div.quantity-picker {
+  margin: 0.5rem 0rem;
+}
+main div.catalog-container div.product-list figure figcaption div.prod-counter div.quantity-picker label {
+  font-family: var(--font-brand);
+  margin: 0rem 0.35rem;
+}
+main div.catalog-container div.product-list figure figcaption div.prod-counter div.quantity-picker button.qty-btn {
+  padding: 0rem 0.35rem;
 }
 
 footer {
@@ -56,6 +132,44 @@ footer {
 footer div.footer-container h1 {
   color: var(--bg-color-pri);
   font-family: var(--font-brand);
+}
+footer div.footer-container div.footer-contact,
+footer div.footer-container div.footer-hours {
+  margin-bottom: 1rem;
+}
+footer div.footer-container div.footer-contact h2,
+footer div.footer-container div.footer-hours h2 {
+  font-family: var(--font-brand);
+  letter-spacing: 0.05rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+footer div.footer-container div.footer-contact ul li,
+footer div.footer-container div.footer-hours ul li {
+  font-size: 1rem;
+}
+footer div.footer-container div.footer-subscribe h2 {
+  font-family: var(--font-brand);
+  letter-spacing: 0.05rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+footer div.footer-container div.footer-subscribe p {
+  margin-bottom: 1rem;
+}
+footer div.footer-container div.footer-subscribe input {
+  font-family: var(--font-main);
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--bg-color-pri);
+}
+footer div.footer-container div.footer-subscribe button {
+  background-color: #ff7e00;
+}
+footer div.footer-container div.footer-subscribe div.footer-subscribe ul.footer-social li i {
+  font-size: 1.5rem;
+  margin: 0rem 0.5rem;
+  color: #ff7e00;
 }
 footer div.footer-contact {
   font-family: var(--font-main);
@@ -81,7 +195,6 @@ button.button {
 
 @media screen and (min-width: 960px) {
   nav {
-    background-color: #f2f7f2;
     padding: 0.5rem 1rem;
     position: fixed;
     z-index: 9;
@@ -93,10 +206,6 @@ button.button {
     max-width: 1340px;
     margin: 0 auto;
     padding: 0rem 1rem;
-  }
-  nav .nav--container div.nav-brand img {
-    width: 2rem;
-    margin: 0rem 0.5rem;
   }
   nav .nav--container ul.nav-links li,
   nav .nav--container ul.nav-social li {
@@ -120,8 +229,11 @@ button.button {
   nav .nav--container #cart {
     font-size: 1.25rem;
   }
+  nav .nav--container #burger-menu {
+    display: none;
+  }
   main {
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
   main div.catalog-container {
     width: 95%;
@@ -129,74 +241,8 @@ button.button {
     margin: 0 auto;
     padding: 0rem 1rem;
   }
-  main div.catalog-container aside {
-    width: 100%;
-  }
-  main div.catalog-container div.product-list {
-    flex-wrap: wrap;
-  }
   main div.catalog-container div.product-list figure {
-    position: relative;
-    margin: 1rem;
     flex-basis: calc(30% - 1rem);
-    width: 360px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 1rem;
-  }
-  main div.catalog-container div.product-list figure img {
-    margin-bottom: 1rem;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  main div.catalog-container div.product-list figure .sale-badge {
-    position: absolute;
-    font-family: var(--font-sec);
-    background-color: #ff7e00;
-    font-size: 0.85rem;
-    padding: 0.35rem;
-    left: 1rem;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
-  main div.catalog-container div.product-list figure figcaption {
-    background-color: #f2f7f2;
-    padding: 1rem;
-  }
-  main div.catalog-container div.product-list figure figcaption h4 {
-    font-family: var(--font-main);
-    font-size: 0.75rem;
-  }
-  main div.catalog-container div.product-list figure figcaption i {
-    font-size: 0.65rem;
-    font-weight: 600;
-    color: #ff7e00;
-  }
-  main div.catalog-container div.product-list figure figcaption h2 {
-    margin: 0.5rem 0rem;
-    font-family: var(--font-brand);
-  }
-  main div.catalog-container div.product-list figure figcaption span.discounted-price {
-    font-family: var(--font-main);
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-decoration: none;
-    margin-left: 0.25rem;
-    color: #ff7e00;
-  }
-  main div.catalog-container div.product-list figure figcaption div h3 {
-    font-family: var(--font-brand);
-    font-weight: 100;
-  }
-  main div.catalog-container div.product-list figure figcaption div div.quantity-picker {
-    margin: 0.5rem 0rem;
-  }
-  main div.catalog-container div.product-list figure figcaption div div.quantity-picker label {
-    font-family: var(--font-brand);
-    margin: 0rem 0.35rem;
-  }
-  main div.catalog-container div.product-list figure figcaption div div.quantity-picker button.qty-btn {
-    padding: 0rem 0.35rem;
   }
   footer {
     padding: 1rem;
@@ -211,48 +257,81 @@ button.button {
   footer div.footer-container div.footer-brand img {
     width: 5rem;
   }
-  footer div.footer-container div.footer-contact,
-  footer div.footer-container div.footer-hours {
-    max-width: 25%;
-  }
-  footer div.footer-container div.footer-contact h2,
-  footer div.footer-container div.footer-hours h2 {
-    font-family: var(--font-brand);
-    letter-spacing: 0.05rem;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  footer div.footer-container div.footer-contact ul li,
-  footer div.footer-container div.footer-hours ul li {
-    font-size: 1rem;
-  }
   footer div.footer-container div.footer-subscribe {
     max-width: 25%;
   }
-  footer div.footer-container div.footer-subscribe h2 {
-    font-family: var(--font-brand);
-    letter-spacing: 0.05rem;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  footer div.footer-container div.footer-subscribe p {
-    margin-bottom: 1rem;
-  }
   footer div.footer-container div.footer-subscribe input {
     width: 60%;
-    font-family: var(--font-main);
-    margin-right: 0.5rem;
-    padding: 0.25rem 0.5rem;
-    border: 1px solid var(--bg-color-pri);
-  }
-  footer div.footer-container div.footer-subscribe button {
-    background-color: #ff7e00;
   }
   footer div.footer-container div.footer-subscribe ul.footer-social {
     margin-top: 0.5rem;
   }
   footer div.footer-container div.footer-subscribe ul.footer-social li {
+    font-size: 1rem;
+    margin: 0rem 0.5rem;
+    color: #ff7e00;
+  }
+}
+@media screen and (max-width: 959px) {
+  nav {
+    position: relative;
+    width: 100vw;
+  }
+  nav div.nav--container {
+    width: 100vw;
+    background-color: #f2f7f2;
+    position: fixed;
+    z-index: 9;
+    padding: 0.5rem 1.25rem;
+  }
+  nav div.nav--container ul.nav-links {
+    display: none;
+  }
+  nav div.nav--container ul.nav-social {
+    display: none;
+  }
+  nav div.nav--container #cart {
+    display: none;
+  }
+  nav div.nav--container #burger-menu {
     font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  main {
+    padding-top: 5rem;
+  }
+  main div.catalog-container {
+    flex-direction: column;
+  }
+  main div.catalog-container div.product-list figure {
+    flex-basis: 1;
+  }
+  footer {
+    padding: 1rem 3rem;
+    color: var(--bg-color-pri);
+  }
+  footer div.footer-container {
+    flex-direction: column;
+  }
+  footer div.footer-container div.footer-brand {
+    margin-bottom: 1rem;
+  }
+  footer div.footer-container div.footer-brand img {
+    margin-top: 1rem;
+    width: 5rem;
+  }
+  footer div.footer-container div.footer-subscribe {
+    text-align: center;
+  }
+  footer div.footer-container div.footer-subscribe input {
+    width: 100%;
+  }
+  footer div.footer-container div.footer-subscribe ul.footer-social {
+    justify-content: center;
+    margin: 1rem;
+  }
+  footer div.footer-container div.footer-subscribe ul.footer-social li {
+    font-size: 1rem;
     margin: 0rem 0.5rem;
     color: #ff7e00;
   }

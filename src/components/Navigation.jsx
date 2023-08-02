@@ -26,7 +26,10 @@ export default function Navigation() {
             <i className="fa-brands fa-pinterest-p"></i>
           </li>
         </ul>
-        <i id="cart" className="fa-solid fa-cart-shopping flex-row align"></i>
+        <div className="flex-row">
+          <i id="cart" className="fa-solid fa-cart-shopping flex-row align"></i>
+          <i id="burger-menu" className="fa-solid fa-bars flex-row align"></i>
+        </div>
       </div>
     </nav>
   );
