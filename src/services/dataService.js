@@ -1,6 +1,7 @@
 let catalog = [
   {
     name: "Trek Top Fuel 9x9 XX1 AXS PRO EVO PLUS",
+    make: "Trek",
     price: 11499,
     dcprice: 0,
     image: "bike1.jpg",
@@ -11,6 +12,7 @@ let catalog = [
   },
   {
     name: "Slash 9.9 XX1 AXS COMP PLUS V5 6.2",
+    make: "Slash",
     price: 12550,
     dcprice: 11000,
     image: "slash9.jpeg",
@@ -21,6 +23,7 @@ let catalog = [
   },
   {
     name: "Fuel Stratosphere EX 9.9 XX1 AXS 5mm",
+    make: "Fuel",
     price: 10750,
     dcprice: 0,
     image: "fuelex.png",
@@ -31,6 +34,7 @@ let catalog = [
   },
   {
     name: "Specialized Lightweight S-Works RS",
+    make: "Specialized",
     price: 12000,
     dcprice: 11000,
     image: "specevo.png",
@@ -41,6 +45,7 @@ let catalog = [
   },
   {
     name: "Specialized Featherweight EPIC Evo Pro",
+    make: "Specialized",
     price: 8900,
     dcprice: 0,
     image: "specevopro.png",
@@ -51,6 +56,7 @@ let catalog = [
   },
   {
     name: "Specialized EVO G1 XX1 Stumpjumper",
+    make: "Specialized",
     price: 5000,
     dcprice: 4500,
     image: "stumpjumper.png",
