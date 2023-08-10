@@ -59,12 +59,14 @@ nav .nav--container div.nav-brand img {
   margin: 0rem 0.5rem;
 }
 
+main {
+  min-height: 80svh;
+}
 main h3 {
   font-family: var(--font-brand);
   letter-spacing: 2px;
 }
 main div.filters {
-  padding-top: 1.5rem;
   flex-wrap: wrap;
 }
 main div.filters div.filter-button-set {
@@ -249,6 +251,9 @@ button.button {
   }
   main {
     padding-top: 3rem;
+  }
+  main div.filters {
+    padding-top: 1.5rem;
   }
   main div.catalog-container {
     width: 95%;

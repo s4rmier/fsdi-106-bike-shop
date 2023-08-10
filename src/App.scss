@@ -79,13 +79,13 @@ nav {
 }
 
 main {
+  min-height: 80svh;
   h3 {
     font-family: var(--font-brand);
     letter-spacing: 2px;
   }
 
   div.filters {
-    padding-top: 1.5rem;
     flex-wrap: wrap;
     div.filter-button-set {
       margin-left: 0.5rem;
@@ -300,6 +300,9 @@ button.button {
 
   main {
     padding-top: 3rem;
+    div.filters {
+      padding-top: 1.5rem;
+    }
     div.catalog-container {
       width: 95%;
       max-width: 1340px;
