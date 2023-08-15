@@ -1,16 +1,29 @@
+import { Link } from "react-router-dom";
+
 export default function Navigation() {
   return (
     <nav>
       <div className="nav--container flex-row justify-sb">
-        <div className="nav-brand flex-row align">
-          <img src="/images/logo.svg" alt="" />
-          <h1>Urban Bikes Co</h1>
-        </div>
+        <Link to="/">
+          <div className="nav-brand flex-row align">
+            <img src="/images/logo.svg" alt="" />
+            <h1>Urban Bikes Co</h1>
+          </div>
+        </Link>
         <ul className="nav-links align justify flex-row">
-          <li>Home</li>
-          <li className="active">Catalog</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/catalog">Catalog</Link>
+          </li>
           <li>Events</li>
-          <li>About</li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/admin">Admin</Link>
+          </li>
         </ul>
         <ul className="nav-social align flex-row">
           <li>
@@ -26,8 +39,13 @@ export default function Navigation() {
             <i className="fa-brands fa-pinterest-p"></i>
           </li>
         </ul>
-        <div className="flex-row">
-          <i id="cart" className="fa-solid fa-cart-shopping flex-row align"></i>
+        <div className="flex-row align justify">
+          <Link to="/cart">
+            <i
+              id="cart-icon"
+              className="fa-solid fa-cart-shopping flex-row align"
+            ></i>
+          </Link>
           <i id="burger-menu" className="fa-solid fa-bars flex-row align"></i>
         </div>
       </div>

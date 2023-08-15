@@ -8,21 +8,28 @@ export default function Catalog() {
   const [filteredProd, setFiltered] = useState([]);
 
   useEffect(function () {
+    loadCatalog();
+    loadCategories();
+  }, []);
+
+  function loadCatalog() {
     let service = new DataService();
     let prods = service.getProducts();
     setProducts(prods);
     setFiltered(prods);
+  }
+
+  function loadCategories() {
     let categories = ["Trek", "Fuel", "Specialized", "Sale"];
     setCategory(categories);
-  }, []);
+  }
 
   function filter(itemCategory) {
-    console.log(itemCategory);
     let filteredList = [];
     products.forEach((element) => {
-      if (element.make == itemCategory) {
+      if (element.make === itemCategory) {
         filteredList.push(element);
-      } else if (itemCategory == "Sale") {
+      } else if (itemCategory === "Sale") {
         if (element.isDiscounted) {
           filteredList.push(element);
         }
@@ -36,7 +43,7 @@ export default function Catalog() {
   }
 
   return (
-    <main className="catalog">
+    <main id="catalog" className="catalog">
       <div className="filters flex-row align justify">
         <h3>Filter: </h3>
         <div className="filter-button-set">

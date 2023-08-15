@@ -35,6 +35,10 @@ body {
     max-width: 100%;
   }
 
+  a {
+    color: inherit;
+  }
+
   .flex-col {
     display: flex;
     flex-direction: column;
@@ -78,8 +82,7 @@ nav {
   }
 }
 
-main {
-  min-height: 80svh;
+#catalog {
   h3 {
     font-family: var(--font-brand);
     letter-spacing: 2px;
@@ -248,6 +251,10 @@ button.button {
   border: 1px solid var(--bg-color-pri);
 }
 
+button.button:hover {
+  background-color: #ffda22;
+}
+
 .active {
   padding-bottom: 0.075rem;
   border-bottom: 0.1rem solid var(--bg-color-pri);
@@ -288,7 +295,7 @@ button.button {
         }
       }
 
-      #cart {
+      #cart-icon {
         font-size: 1.25rem;
       }
 
@@ -300,6 +307,21 @@ button.button {
 
   main {
     padding-top: 3rem;
+  }
+
+  #home {
+    padding: 5rem;
+    text-align: center;
+    background-color: #a9adb2;
+  }
+
+  #about {
+    padding: 5rem;
+    text-align: center;
+    background-color: #f2f7f2;
+  }
+
+  #catalog {
     div.filters {
       padding-top: 1.5rem;
     }
@@ -315,6 +337,18 @@ button.button {
         }
       }
     }
+  }
+
+  #cart {
+    padding: 5rem;
+    background-color: #ff8710;
+    text-align: center;
+  }
+
+  #admin {
+    padding: 5rem;
+    background-color: #f2f7f2;
+    text-align: center;
   }
 
   footer {
@@ -341,9 +375,15 @@ button.button {
         ul.footer-social {
           margin-top: 0.5rem;
           li {
+            padding: 0.075rem;
             font-size: 1rem;
             margin: 0rem 0.5rem;
             color: #ff7e00;
+            cursor: pointer;
+          }
+          li:hover {
+            padding-bottom: 0.075rem;
+            border-bottom: 0.1rem solid var(--bg-color-pri);
           }
         }
       }
@@ -369,10 +409,6 @@ button.button {
         display: none;
       }
 
-      #cart {
-        display: none;
-      }
-
       #burger-menu {
         font-size: 1.5rem;
         margin-left: 2rem;
@@ -381,6 +417,10 @@ button.button {
   }
 
   main {
+    padding-top: 4rem;
+  }
+
+  #catalog {
     padding-top: 5rem;
     div.catalog-container {
       flex-direction: column;
