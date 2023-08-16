@@ -1,0 +1,128 @@
+#catalog {
+  h3 {
+    font-family: var(--font-brand);
+    letter-spacing: 2px;
+  }
+
+  div.filters {
+    flex-wrap: wrap;
+    div.filter-button-set {
+      margin-left: 0.5rem;
+      button.filter-btn {
+        flex-basis: 1;
+        margin: 0.25rem;
+      }
+    }
+  }
+
+  div.catalog-container {
+    div.product-list {
+      flex-wrap: wrap;
+      figure {
+        position: relative;
+        margin: 1rem;
+        width: 360px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 1rem;
+
+        img {
+          height: 140px;
+          margin-bottom: 1rem;
+          object-fit: contain;
+        }
+
+        .sale-badge {
+          position: absolute;
+          font-family: var(--font-sec);
+          background-color: #ff7e00;
+          font-size: 0.85rem;
+          padding: 0.35rem;
+          left: 1rem;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+
+        figcaption {
+          background-color: #f2f7f2;
+          padding: 1rem;
+          min-height: 160px;
+          h4 {
+            font-family: var(--font-main);
+            font-size: 0.75rem;
+          }
+          i {
+            font-size: 0.65rem;
+            font-weight: 600;
+            color: #ff7e00;
+          }
+          h2 {
+            margin: 0.5rem 0rem;
+            font-family: var(--font-brand);
+          }
+
+          span.discounted-price {
+            font-family: var(--font-main);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            margin-left: 0.25rem;
+            color: #ff7e00;
+          }
+
+          div.prod-counter {
+            h3 {
+              font-family: var(--font-brand);
+              font-weight: 100;
+            }
+            div.quantity-picker {
+              margin: 0.5rem 0rem;
+              label {
+                font-family: var(--font-brand);
+                margin: 0rem 0.35rem;
+              }
+              button.qty-btn {
+                padding: 0rem 0.35rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #catalog {
+    div.filters {
+      padding-top: 1.5rem;
+    }
+    div.catalog-container {
+      width: 95%;
+      max-width: 1340px;
+      margin: 0 auto;
+      padding: 0rem 1rem;
+
+      div.product-list {
+        figure {
+          flex-basis: calc(30% - 1rem);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 959px) {
+  #catalog {
+    padding-top: 5rem;
+    div.catalog-container {
+      flex-direction: column;
+
+      div.product-list {
+        figure {
+          flex-basis: 1;
+        }
+      }
+    }
+  }
+}

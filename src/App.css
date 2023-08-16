@@ -62,87 +62,6 @@ nav .nav--container div.nav-brand img {
   margin: 0rem 0.5rem;
 }
 
-#catalog h3 {
-  font-family: var(--font-brand);
-  letter-spacing: 2px;
-}
-#catalog div.filters {
-  flex-wrap: wrap;
-}
-#catalog div.filters div.filter-button-set {
-  margin-left: 0.5rem;
-}
-#catalog div.filters div.filter-button-set button.filter-btn {
-  flex-basis: 1;
-  margin: 0.25rem;
-}
-#catalog div.catalog-container div.product-list {
-  flex-wrap: wrap;
-}
-#catalog div.catalog-container div.product-list figure {
-  position: relative;
-  margin: 1rem;
-  width: 360px;
-  background-color: white;
-  border-radius: 10px;
-  padding: 1rem;
-}
-#catalog div.catalog-container div.product-list figure img {
-  height: 140px;
-  margin-bottom: 1rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-#catalog div.catalog-container div.product-list figure .sale-badge {
-  position: absolute;
-  font-family: var(--font-sec);
-  background-color: #ff7e00;
-  font-size: 0.85rem;
-  padding: 0.35rem;
-  left: 1rem;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-#catalog div.catalog-container div.product-list figure figcaption {
-  background-color: #f2f7f2;
-  padding: 1rem;
-}
-#catalog div.catalog-container div.product-list figure figcaption h4 {
-  font-family: var(--font-main);
-  font-size: 0.75rem;
-}
-#catalog div.catalog-container div.product-list figure figcaption i {
-  font-size: 0.65rem;
-  font-weight: 600;
-  color: #ff7e00;
-}
-#catalog div.catalog-container div.product-list figure figcaption h2 {
-  margin: 0.5rem 0rem;
-  font-family: var(--font-brand);
-}
-#catalog div.catalog-container div.product-list figure figcaption span.discounted-price {
-  font-family: var(--font-main);
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-decoration: none;
-  margin-left: 0.25rem;
-  color: #ff7e00;
-}
-#catalog div.catalog-container div.product-list figure figcaption div.prod-counter h3 {
-  font-family: var(--font-brand);
-  font-weight: 100;
-}
-#catalog div.catalog-container div.product-list figure figcaption div.prod-counter div.quantity-picker {
-  margin: 0.5rem 0rem;
-}
-#catalog div.catalog-container div.product-list figure figcaption div.prod-counter div.quantity-picker label {
-  font-family: var(--font-brand);
-  margin: 0rem 0.35rem;
-}
-#catalog div.catalog-container div.product-list figure figcaption div.prod-counter div.quantity-picker button.qty-btn {
-  padding: 0rem 0.35rem;
-}
-
 footer {
   background-color: #f2f7f2;
 }
@@ -256,38 +175,6 @@ button.button:hover {
   main {
     padding-top: 3rem;
   }
-  #home {
-    padding: 5rem;
-    text-align: center;
-    background-color: #a9adb2;
-  }
-  #about {
-    padding: 5rem;
-    text-align: center;
-    background-color: #f2f7f2;
-  }
-  #catalog div.filters {
-    padding-top: 1.5rem;
-  }
-  #catalog div.catalog-container {
-    width: 95%;
-    max-width: 1340px;
-    margin: 0 auto;
-    padding: 0rem 1rem;
-  }
-  #catalog div.catalog-container div.product-list figure {
-    flex-basis: calc(30% - 1rem);
-  }
-  #cart {
-    padding: 5rem;
-    background-color: #ff8710;
-    text-align: center;
-  }
-  #admin {
-    padding: 5rem;
-    background-color: #f2f7f2;
-    text-align: center;
-  }
   footer {
     padding: 1rem;
     color: var(--bg-color-pri);
@@ -346,15 +233,6 @@ button.button:hover {
   }
   main {
     padding-top: 4rem;
-  }
-  #catalog {
-    padding-top: 5rem;
-  }
-  #catalog div.catalog-container {
-    flex-direction: column;
-  }
-  #catalog div.catalog-container div.product-list figure {
-    flex-basis: 1;
   }
   footer {
     padding: 1rem 3rem;

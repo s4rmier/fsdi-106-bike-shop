@@ -17,7 +17,6 @@ export default function Navigation() {
           <li>
             <Link to="/catalog">Catalog</Link>
           </li>
-          <li>Events</li>
           <li>
             <Link to="/about">About</Link>
           </li>

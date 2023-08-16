@@ -11,7 +11,7 @@ let catalog = [
     _id: "1",
   },
   {
-    name: "Slash 9.9 XX1 AXS COMP PLUS V5 6.2",
+    name: "Slash 9.9 XX1 AXS COMP PLUS V5 6.2 XMS",
     make: "Slash",
     price: 12550,
     dcprice: 11000,
@@ -33,7 +33,7 @@ let catalog = [
     _id: "3",
   },
   {
-    name: "Specialized Lightweight S-Works RS",
+    name: "Specialized Lightweight S-Works RS PLUS",
     make: "Specialized",
     price: 12000,
     dcprice: 11000,
