@@ -2,8 +2,6 @@
   color: #18114a;
 }
 #home section.hero-section {
-  width: 100%;
-  height: 80vh;
   background-image: url(/public/images/freebike.jpg);
   background-size: cover;
   background-position: center;
@@ -12,8 +10,6 @@
   background-color: rgba(56, 55, 55, 0.15);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
-  width: 100%;
-  padding: 2rem;
   letter-spacing: 1px;
 }
 #home section.hero-section div.tagline h1,
@@ -23,30 +19,13 @@
   font-family: "Bebas Neue";
   mix-blend-mode: lighten;
 }
-#home section.hero-section div.tagline h1 {
-  font-size: 6rem;
-}
-#home section.hero-section div.tagline h2 {
-  font-size: 2rem;
-}
 #home section.hero-section button.button {
   margin: 1rem;
 }
 #home img.brands-strip {
-  padding: 2rem 4rem;
   background-color: #383737;
 }
-#home figure.bike-showcase {
-  margin: 2rem 0rem;
-}
-#home figure.bike-showcase img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin: 0rem 2rem;
-  width: 40%;
-}
 #home figure.bike-showcase figcaption {
-  width: 30%;
   padding: 1rem;
 }
 #home figure.bike-showcase figcaption div.col-price-star h4,
@@ -67,24 +46,15 @@
 #home figure.bike-showcase figcaption div p span {
   font-weight: 600;
 }
-#home section.about-us {
-  margin: 1rem 0rem;
-}
 #home section.about-us h2 {
   text-align: center;
   font-family: "Bebas Neue";
   font-size: 2rem;
-  margin-bottom: 1rem;
 }
 #home section.about-us div {
   margin-bottom: 1rem;
 }
-#home section.about-us div figure.about-cards {
-  margin: 0rem 1rem;
-}
 #home section.about-us div figure.about-cards img {
-  width: 300px;
-  height: 160px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -98,29 +68,20 @@
   text-transform: uppercase;
   font-size: 1.5rem;
 }
-#home section.theclub {
-  margin-bottom: 2rem;
-}
-#home section.theclub div {
+#home section.theclub div.clublogo {
   margin: 2rem 0rem;
 }
-#home section.theclub div img {
+#home section.theclub div.clublogo img {
   align-self: center;
-  width: 50%;
 }
 #home section.theclub h2 {
-  padding: 0rem 2rem;
   font-family: "Poppins";
   font-size: 1rem;
   text-align: center;
   font-weight: 400;
 }
-#home section.theclub div figure {
-  width: 30%;
-}
 #home section.theclub div figure i {
   font-size: 3rem;
-  padding: 1rem 0rem;
 }
 #home section.theclub div figure figcaption {
   padding: 0rem 2rem;
@@ -128,4 +89,194 @@
 #home section.theclub div figure figcaption h3 {
   font-family: "Poppins";
   font-weight: 400;
+}
+
+@media screen and (min-width: 960px) {
+  section.hero-section {
+    width: 100%;
+    height: 80vh;
+    background-image: url(/public/images/freebike.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  section.hero-section div.tagline {
+    background-color: rgba(56, 55, 55, 0.15);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+    width: 100%;
+    padding: 2rem;
+    letter-spacing: 1px;
+  }
+  section.hero-section div.tagline h1,
+  section.hero-section div.tagline h2 {
+    text-align: center;
+    color: #ff7e00;
+    font-family: "Bebas Neue";
+    mix-blend-mode: lighten;
+  }
+  section.hero-section div.tagline h1 {
+    font-size: 6rem;
+  }
+  section.hero-section div.tagline h2 {
+    font-size: 2rem;
+  }
+  section.hero-section button.button {
+    margin: 1rem;
+  }
+  img.brands-strip {
+    padding: 2rem 4rem;
+    background-color: #383737;
+  }
+  figure.bike-showcase {
+    margin: 2rem 0rem;
+  }
+  figure.bike-showcase img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0rem 2rem;
+    width: 40%;
+  }
+  figure.bike-showcase figcaption {
+    width: 30%;
+    padding: 1rem;
+  }
+  figure.bike-showcase figcaption div.col-price-star h4,
+  figure.bike-showcase figcaption div.col-price-star i {
+    font-size: 0.75rem;
+    color: #ff7e00;
+  }
+  figure.bike-showcase figcaption h2 {
+    font-family: "Bebas Neue";
+  }
+  figure.bike-showcase figcaption div {
+    margin: 1rem 0rem;
+  }
+  figure.bike-showcase figcaption div p {
+    font-family: "Poppins";
+    font-size: 0.85rem;
+  }
+  figure.bike-showcase figcaption div p span {
+    font-weight: 600;
+  }
+  section.about-us {
+    margin: 1rem 0rem;
+  }
+  section.about-us h2 {
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  section.about-us div {
+    margin-bottom: 1rem;
+  }
+  section.about-us div figure.about-cards {
+    margin: 0rem 1rem;
+  }
+  section.about-us div figure.about-cards img {
+    width: 300px;
+    height: 160px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.about-us div figure.about-cards figcaption {
+    padding: 1rem;
+    background-color: #f2f7f2;
+  }
+  section.about-us div figure.about-cards figcaption h3 {
+    font-family: "Bebas Neue";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  section.theclub {
+    margin-bottom: 2rem;
+  }
+  section.theclub div {
+    margin: 2rem 0rem;
+  }
+  section.theclub div img {
+    align-self: center;
+    width: 50%;
+  }
+  section.theclub h2 {
+    padding: 0rem 2rem;
+    font-family: "Poppins";
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+  }
+  section.theclub div figure {
+    width: 30%;
+  }
+  section.theclub div figure i {
+    font-size: 3rem;
+    padding: 1rem 0rem;
+  }
+  section.theclub div figure figcaption {
+    padding: 0rem 2rem;
+  }
+  section.theclub div figure figcaption h3 {
+    font-family: "Poppins";
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 959px) {
+  section.hero-section {
+    min-height: 60vh;
+  }
+  section.hero-section div.tagline h1 {
+    width: 90%;
+    font-size: 3.5rem;
+  }
+  section.hero-section div.tagline h2 {
+    width: 90%;
+    font-size: 2rem;
+  }
+  img.brands-strip {
+    display: none;
+  }
+  figure.bike-showcase {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 2rem 0rem 1rem;
+  }
+  figure.bike-showcase img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  figure.bike-showcase figcaption {
+    width: 100%;
+  }
+  section.about-us {
+    margin: 0rem 0rem 2rem;
+  }
+  section.about-us div {
+    align-items: center;
+    flex-direction: column;
+  }
+  section.about-us div img {
+    height: 240px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.about-us div figure {
+    margin: 1rem 0rem;
+    width: 90%;
+  }
+  section.theclub {
+    width: 90%;
+  }
+  section.theclub div {
+    flex-direction: column;
+  }
+  section.theclub div.club-benefits {
+    margin: 1rem 0rem;
+    text-align: center;
+  }
+  section.theclub div.club-benefits figure {
+    margin: 1rem 0rem;
+  }
 }/*# sourceMappingURL=home.css.map */

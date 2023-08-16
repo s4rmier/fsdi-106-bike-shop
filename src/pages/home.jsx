@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main id="home" className="flex-col align">
       <section className="hero-section flex-col align justify">
-        <div className="tagline">
+        <div className="tagline flex-col align">
           <h1>IS IT JUST YOU AND THE OPEN ROAD?</h1>
           <h2>Elevate your journey and Find the perfect ride</h2>
         </div>
@@ -16,6 +16,7 @@ export default function Home() {
       </section>
 
       <img className="brands-strip" src={"/images/brands.svg"} alt="" />
+      <div className="mobile-brands"></div>
 
       <figure className="bike-showcase flex-row justify">
         <img src="/images/bike1.jpg" alt="" />
@@ -84,7 +85,7 @@ export default function Home() {
       </section>
 
       <section className="theclub container flex-col justify">
-        <div className="flex-row justify">
+        <div className="clublogo flex-row justify">
           <img src="/images/theclubhero.png" alt="" />
         </div>
         <h2>
@@ -93,7 +94,7 @@ export default function Home() {
           Improve your skills and connect with a supportive community. Upgrade
           your biking experience today!
         </h2>
-        <div className="flex-row align justify">
+        <div className="club-benefits flex-row align justify">
           <figure className="flex-col align">
             <i className="fa-solid fa-map-location-dot"></i>
             <figcaption>
