@@ -1,0 +1,46 @@
+#admin {
+  padding-top: 6rem;
+  min-height: 80svh;
+  h1 {
+    font-family: var(--font-brand);
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  h3 {
+    margin: 1rem 0rem;
+    font-family: var(--font-brand);
+    letter-spacing: 0.25px;
+  }
+
+  div.form-container {
+    margin: 2rem 0rem;
+    width: 16rem;
+    padding: 1rem 2rem;
+    background-color: var(--font-color-sec);
+    label,
+    input {
+      font-family: "Poppins";
+      font-size: 1rem;
+      margin: 0.5rem 0.25rem;
+    }
+
+    label {
+      text-transform: uppercase;
+    }
+
+    input {
+      padding: 0.1rem 0.5rem;
+    }
+
+    button.button {
+      margin: 1rem 0rem;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+}
+
+@media screen and (max-width: 959px) {
+}

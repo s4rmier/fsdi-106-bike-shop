@@ -21,6 +21,9 @@
   transition: all 200ms ease-in-out;
 }
 
+body {
+  color: var(--bg-color-pri);
+}
 body img {
   max-width: 100%;
 }

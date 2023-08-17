@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./navigation.css";
+import HamburgerMenu from "./hamburgermenu";
 
 export default function Navigation() {
   return (
@@ -46,7 +47,7 @@ export default function Navigation() {
               className="fa-solid fa-cart-shopping flex-row align"
             ></i>
           </Link>
-          <i id="burger-menu" className="fa-solid fa-bars flex-row align"></i>
+          <HamburgerMenu />
         </div>
       </div>
     </nav>
