@@ -1,3 +1,6 @@
+#catalog {
+  padding-top: 3rem;
+}
 #catalog h3 {
   font-family: var(--font-brand);
   letter-spacing: 2px;

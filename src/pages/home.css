@@ -87,8 +87,10 @@
   padding: 0rem 2rem;
 }
 #home section.theclub div figure figcaption h3 {
+  margin-top: 1rem;
   font-family: "Poppins";
   font-weight: 400;
+  text-align: center;
 }
 
 @media screen and (min-width: 960px) {
