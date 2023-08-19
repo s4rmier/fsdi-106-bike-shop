@@ -76,15 +76,15 @@
               font-family: var(--font-brand);
               font-weight: 100;
             }
-            div.quantity-picker {
-              margin: 0.5rem 0rem;
-              label {
-                font-family: var(--font-brand);
-                margin: 0rem 0.35rem;
-              }
-              button.qty-btn {
-                padding: 0rem 0.35rem;
-              }
+          }
+          div.quantity-picker {
+            margin: 0.5rem 0rem;
+            label {
+              font-family: var(--font-brand);
+              margin: 0rem 0.35rem;
+            }
+            button.qty-btn {
+              padding: 0rem 0.35rem;
             }
           }
         }

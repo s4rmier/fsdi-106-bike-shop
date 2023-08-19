@@ -72,14 +72,14 @@
   font-family: var(--font-brand);
   font-weight: 100;
 }
-#catalog div.catalog-container div.product-list figure figcaption div.prod-counter div.quantity-picker {
+#catalog div.catalog-container div.product-list figure figcaption div.quantity-picker {
   margin: 0.5rem 0rem;
 }
-#catalog div.catalog-container div.product-list figure figcaption div.prod-counter div.quantity-picker label {
+#catalog div.catalog-container div.product-list figure figcaption div.quantity-picker label {
   font-family: var(--font-brand);
   margin: 0rem 0.35rem;
 }
-#catalog div.catalog-container div.product-list figure figcaption div.prod-counter div.quantity-picker button.qty-btn {
+#catalog div.catalog-container div.product-list figure figcaption div.quantity-picker button.qty-btn {
   padding: 0rem 0.35rem;
 }
 

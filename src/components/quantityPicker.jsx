@@ -1,17 +1,19 @@
 import { useState } from "react";
 
-export default function QuantityPicker() {
+export default function QuantityPicker(props) {
   let [quantity, setQuantity] = useState(0);
 
   function increase() {
     let val = quantity + 1;
     setQuantity(val);
+    props.onChange(val);
   }
 
   function decrease() {
     if (quantity === 0) return;
     let val = quantity - 1;
     setQuantity(val);
+    props.onChange(val);
   }
 
   return (

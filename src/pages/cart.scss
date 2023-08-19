@@ -1,0 +1,7 @@
+<span style={{ display: cartQty.length ? "inherit" : "none" }} className="cart-quantity">
+  {cartQty.length}
+</span>
+#cart {
+  padding: 6rem;
+  text-align: center;
+}
