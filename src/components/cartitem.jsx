@@ -9,8 +9,8 @@ export default function CartItem(props) {
       <td>
         <img src={`/images/${props.data.image}`} alt="" />
       </td>
-      <td>${props.data.price}</td>
       <td>{props.data.name}</td>
+      <td>${props.data.price}</td>
       <td>{props.data.quantity}</td>
       <td>${props.data.price * props.data.quantity}</td>
       <td>

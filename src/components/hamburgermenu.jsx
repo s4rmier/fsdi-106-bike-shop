@@ -16,16 +16,16 @@ export default function HamburgerMenu(props) {
           </figcaption>
         </figure>
         <ul className="modal-nav">
-          <Link to="/">
+          <Link onClick={props.toggleElementVisibility} to="/">
             <li>Home</li>
           </Link>
-          <Link to="/catalog">
+          <Link onClick={props.toggleElementVisibility} to="/catalog">
             <li>Catalog</li>
           </Link>
-          <Link>
+          <Link onClick={props.toggleElementVisibility} to="/about">
             <li>About</li>
           </Link>
-          <Link>
+          <Link onClick={props.toggleElementVisibility} to="/contact">
             <li>Contact</li>
           </Link>
         </ul>

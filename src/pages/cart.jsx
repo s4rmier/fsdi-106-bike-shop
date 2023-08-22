@@ -3,6 +3,7 @@ import DataContext from "../store/dataContext";
 import "./cart.css";
 import CartItem from "../components/cartitem";
 import { Link } from "react-router-dom";
+import MobileCart from "../components/mobileCartItem";
 
 export default function Cart() {
   const cartItems = useContext(DataContext).cart;
@@ -30,9 +31,9 @@ export default function Cart() {
           </h2>
           <table className="container">
             <tr>
-              <th> </th>
-              <th>Price</th>
+              <th>Item</th>
               <th>Name</th>
+              <th>Price</th>
               <th>Quantity</th>
               <th>Subtotal</th>
               <th> </th>
@@ -45,6 +46,12 @@ export default function Cart() {
               <td>${cartTotal}</td>
             </tr>
           </table>
+          <ul className="mobile-cart">
+            {cartItems.map((item) => (
+              <MobileCart data={item} />
+            ))}
+            <h2>Total: ${cartTotal}</h2>
+          </ul>
         </div>
       ) : (
         <div>
