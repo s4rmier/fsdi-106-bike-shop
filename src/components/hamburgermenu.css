@@ -34,10 +34,25 @@
     font-size: 2rem;
   }
   div div.mobile-nav ul.modal-nav {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   div div.mobile-nav ul.modal-nav li {
     font-size: 2rem;
     margin: 1rem 2rem;
+  }
+  div div.mobile-nav div.footer-contact {
+    margin: 1rem 1rem 0rem;
+  }
+  div div.mobile-nav div.footer-hours {
+    margin: 1rem 1rem 0rem;
+  }
+  div div.mobile-nav div.subscribe-label {
+    margin: 1rem 1rem 0rem;
+  }
+  div div.mobile-nav div.subscribe-form {
+    margin: 0.5rem 1rem;
+  }
+  div div.mobile-nav div.subscribe-form input {
+    margin: 0rem 0.5rem;
   }
 }/*# sourceMappingURL=hamburgermenu.css.map */
