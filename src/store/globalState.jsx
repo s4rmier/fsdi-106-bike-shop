@@ -27,8 +27,9 @@ export default function GlobalState(props) {
     setCart(cartCopy);
   }
 
-  function removeFromCart() {
-    console.log("Removed from global");
+  function removeFromCart(id) {
+    let cartCopy = cart.filter((item) => item._id !== id);
+    setCart(cartCopy);
   }
 
   return (

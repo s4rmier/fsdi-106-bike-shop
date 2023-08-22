@@ -83,11 +83,10 @@
   padding: 0rem 0.35rem;
 }
 #catalog div.catalog-container div.product-list figure figcaption button.cart-button {
-  border: none;
-  background-color: transparent;
+  border-radius: 10px;
 }
 #catalog div.catalog-container div.product-list figure figcaption button.cart-button i {
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 @media screen and (min-width: 960px) {

@@ -33,7 +33,7 @@ let catalog = [
     _id: "3",
   },
   {
-    name: "Specialized Lightweight S-Works RS PLUS",
+    name: "Specialized Lightweight S-Works RS",
     make: "Specialized",
     price: 12000,
     dcprice: 11000,

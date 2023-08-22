@@ -18,8 +18,11 @@
 
 @media screen and (min-width: 960px) {
   #cart {
-    padding-top: 6rem;
-    min-height: 75vh;
+    padding-top: 7rem;
+    min-height: 70vh;
+  }
+  #cart div button.shop-now {
+    margin: 1rem 0rem;
   }
   #cart table {
     padding: 6rem;

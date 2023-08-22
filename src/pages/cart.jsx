@@ -28,33 +28,32 @@ export default function Cart() {
           <h2>
             You have {cartQuantity} item{cartQuantity > 1 && "s"} in your cart
           </h2>
+          <table className="container">
+            <tr>
+              <th> </th>
+              <th>Price</th>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+              <th> </th>
+            </tr>
+            {cartItems.map((item) => (
+              <CartItem data={item} />
+            ))}
+            <tr className="cart-total">
+              <td colSpan={4}>Total</td>
+              <td>${cartTotal}</td>
+            </tr>
+          </table>
         </div>
       ) : (
         <div>
           <h1>Your cart is empty</h1>
           <Link to="/catalog">
-            <button className="button">Shop Now</button>
+            <button className="shop-now button">Shop Now</button>
           </Link>
         </div>
       )}
-
-      <table className="container">
-        <tr>
-          <th> </th>
-          <th>Price</th>
-          <th>Name</th>
-          <th>Quantity</th>
-          <th>Subtotal</th>
-          <th> </th>
-        </tr>
-        {cartItems.map((item) => (
-          <CartItem data={item} />
-        ))}
-        <tr className="cart-total">
-          <td colSpan={4}>Total</td>
-          <td>${cartTotal}</td>
-        </tr>
-      </table>
     </main>
   );
 }
