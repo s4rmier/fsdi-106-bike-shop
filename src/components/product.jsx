@@ -15,6 +15,7 @@ export default function Product(props) {
       ...props.data,
       quantity: quantity,
     };
+
     if (quantity) {
       addToCart(itemAndQuantity);
     } else {
@@ -70,7 +71,7 @@ export default function Product(props) {
         <div className="flex-row align justify-sb">
           <QuantityPicker onChange={handleQuantityChange} />
           <h3>Total: ${getTotal()}</h3>
-          <button onClick={handleAddtoCart} className="button">
+          <button onClick={handleAddtoCart} className="button cart-button">
             <i className="fa-solid fa-cart-plus"></i>
           </button>
         </div>

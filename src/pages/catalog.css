@@ -82,6 +82,13 @@
 #catalog div.catalog-container div.product-list figure figcaption div.quantity-picker button.qty-btn {
   padding: 0rem 0.35rem;
 }
+#catalog div.catalog-container div.product-list figure figcaption button.cart-button {
+  border: none;
+  background-color: transparent;
+}
+#catalog div.catalog-container div.product-list figure figcaption button.cart-button i {
+  font-size: 1rem;
+}
 
 @media screen and (min-width: 960px) {
   #catalog div.filters {

@@ -11,7 +11,19 @@ export default function GlobalState(props) {
 
   function addToCart(prod) {
     let cartCopy = [...cart];
-    cartCopy.push(prod);
+
+    let productFound = false;
+
+    cartCopy.forEach((item) => {
+      if (prod._id === item._id) {
+        item.quantity += prod.quantity;
+        productFound = true;
+      }
+    });
+
+    if (!productFound) {
+      cartCopy.push(prod);
+    }
     setCart(cartCopy);
   }
 

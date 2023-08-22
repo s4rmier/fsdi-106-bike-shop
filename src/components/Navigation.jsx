@@ -1,11 +1,24 @@
 import { Link } from "react-router-dom";
 import "./navigation.css";
 import HamburgerMenu from "./hamburgermenu";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import DataContext from "../store/dataContext";
 
 export default function Navigation() {
-  const cartQty = useContext(DataContext).cart;
+  const cartItems = useContext(DataContext).cart;
+
+  const [isElementVisible, setIsElementVisible] = useState(false);
+
+  let cartQuantity = 0;
+
+  cartItems.forEach((element) => {
+    cartQuantity += element.quantity;
+  });
+
+  function toggleElementVisibility() {
+    setIsElementVisible(!isElementVisible);
+  }
+
   return (
     <nav>
       <div className="nav--container flex-row justify-sb">
@@ -51,14 +64,21 @@ export default function Navigation() {
             >
               {" "}
               <span
-                style={{ display: cartQty.length ? "inherit" : "none" }}
+                style={{ display: cartItems.length ? "inherit" : "none" }}
                 className="cart-quantity"
               >
-                {cartQty.length}
+                {cartQuantity}
               </span>
             </i>
           </Link>
-          <HamburgerMenu />
+          <i
+            onClick={toggleElementVisibility}
+            id="burger-menu"
+            className="fa-solid fa-bars flex-row align"
+          ></i>
+          {isElementVisible && (
+            <HamburgerMenu toggleElementVisibility={toggleElementVisibility} />
+          )}
         </div>
       </div>
     </nav>

@@ -15,7 +15,7 @@ let catalog = [
     make: "Slash",
     price: 12550,
     dcprice: 11000,
-    image: "slash9.jpeg",
+    image: "slash9.png",
     isDiscounted: true,
     sizes: "S/M/L/XL",
     stars: "4.4",

@@ -1,4 +1,50 @@
 #cart {
-  padding: 6rem;
   text-align: center;
+}
+#cart h1,
+#cart h2 {
+  font-family: var(--font-brand);
+}
+#cart table {
+  margin-top: 3rem;
+  font-family: "Poppins";
+}
+#cart table,
+#cart th,
+#cart td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+@media screen and (min-width: 960px) {
+  #cart {
+    padding-top: 6rem;
+    min-height: 75vh;
+  }
+  #cart table {
+    padding: 6rem;
+  }
+  #cart table th {
+    font-family: var(--font-brand);
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
+  #cart table td {
+    padding: 0.5rem;
+  }
+  #cart table td img {
+    width: 100px;
+  }
+  #cart table tr.cart-total td:nth-child(1) {
+    text-align: right;
+    padding: 0rem 1rem;
+  }
+}
+@media screen and (max-width: 959px) {
+  #cart {
+    padding-top: 5rem;
+  }
+  #cart table {
+    display: none;
+  }
 }/*# sourceMappingURL=cart.css.map */

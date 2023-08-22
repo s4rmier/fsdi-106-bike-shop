@@ -1,7 +1,57 @@
-<span style={{ display: cartQty.length ? "inherit" : "none" }} className="cart-quantity">
-  {cartQty.length}
-</span>
 #cart {
-  padding: 6rem;
   text-align: center;
+  h1,
+  h2 {
+    font-family: var(--font-brand);
+  }
+
+  table {
+    margin-top: 3rem;
+    font-family: "Poppins";
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #cart {
+    padding-top: 6rem;
+    min-height: 75vh;
+    table {
+      padding: 6rem;
+      th {
+        font-family: var(--font-brand);
+        font-size: 1.25rem;
+        padding: 0.5rem;
+      }
+
+      td {
+        padding: 0.5rem;
+        img {
+          width: 100px;
+        }
+      }
+
+      tr.cart-total {
+        td:nth-child(1) {
+          text-align: right;
+          padding: 0rem 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 959px) {
+  #cart {
+    padding-top: 5rem;
+    table {
+      display: none;
+    }
+  }
 }
