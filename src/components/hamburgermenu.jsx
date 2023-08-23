@@ -31,11 +31,7 @@ export default function HamburgerMenu(props) {
               About
             </Link>
           </li>
-          <li>
-            <Link onClick={props.toggleElementVisibility} to="/contact">
-              Contact
-            </Link>
-          </li>
+
           <li>
             <Link onClick={props.toggleElementVisibility} to="/admin">
               Admin

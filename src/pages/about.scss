@@ -3,7 +3,12 @@
     background-image: url(/public/images/about-wp.jpg);
     background-position: center;
     background-size: cover;
+  }
+}
 
+@media screen and (min-width: 960px) {
+  #about {
+    padding-top: 3rem;
     div.tag-container {
       background: rgba($color: #f2f7f2, $alpha: 0.5);
       backdrop-filter: blur(2px);
@@ -26,42 +31,7 @@
         }
       }
     }
-  }
 
-  article.about-article {
-    padding: 2rem;
-    h2 {
-      font-family: "Bebas Neue";
-      font-size: 2rem;
-      letter-spacing: 1px;
-    }
-    p {
-      position: relative;
-      padding: 2rem 4rem;
-      align-self: center;
-      text-align: center;
-      font-family: "Poppins";
-      isolation: isolate;
-    }
-
-    p::before {
-      content: '"';
-      font-family: "Quicksand";
-      color: #ff7e00;
-      position: absolute;
-      z-index: -1;
-      font-size: 20rem;
-      font-weight: 800;
-      top: -100%;
-      left: 0;
-      opacity: 0.1;
-    }
-  }
-}
-
-@media screen and (min-width: 960px) {
-  #about {
-    padding-top: 3rem;
     section.about-hero {
       min-height: 80vh;
       padding: 2rem 0rem;
@@ -87,8 +57,250 @@
         }
       }
     }
+
+    article.about-article {
+      padding: 2rem;
+      h2 {
+        font-family: "Bebas Neue";
+        font-size: 2rem;
+        letter-spacing: 1px;
+      }
+      p {
+        position: relative;
+        padding: 2rem 4rem;
+        align-self: center;
+        text-align: center;
+        font-family: "Poppins";
+        isolation: isolate;
+      }
+
+      p::before {
+        content: '"';
+        font-family: "Quicksand";
+        color: #ff7e00;
+        position: absolute;
+        z-index: -1;
+        font-size: 20rem;
+        font-weight: 800;
+        top: -100%;
+        left: 0;
+        opacity: 0.1;
+      }
+    }
+
+    section.about-gallery {
+      margin: 2rem 0rem;
+      h2 {
+        margin: 2rem;
+        text-align: center;
+        font-family: var(--font-brand);
+        font-size: 2rem;
+        letter-spacing: 1px;
+      }
+
+      div.image-gallery {
+        width: 100%;
+        height: 25vh;
+        img {
+          width: 25%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    section.about-cards {
+      figure.about-cards {
+        margin: 0rem 1rem;
+        img {
+          width: 300px;
+          height: 160px;
+          object-fit: cover;
+        }
+        figcaption {
+          padding: 1rem;
+          background-color: #f2f7f2;
+          h3 {
+            font-family: "Bebas Neue";
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+
+    div.about-service {
+      figure.about-service {
+        img {
+          width: 50%;
+          height: 300px;
+          object-fit: cover;
+        }
+        figcaption {
+          background-color: #f2f7f2;
+          padding: 2rem;
+          width: 40%;
+          h2 {
+            font-family: var(--font-brand);
+            font-size: 2rem;
+            letter-spacing: 1px;
+          }
+          p {
+            margin: 1rem 0rem;
+            font-family: "Poppins";
+            font-size: 1rem;
+          }
+        }
+      }
+      button.contact-btn {
+        margin: 2rem 0rem;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 959px) {
+  #about {
+    padding-top: 3rem;
+
+    section.about-hero {
+      min-height: 80vh;
+      div.tag-container {
+        background: rgba($color: #f2f7f2, $alpha: 0.5);
+        backdrop-filter: blur(2px);
+        width: 100%;
+        letter-spacing: 1px;
+        padding: 2rem 0rem;
+        h3 {
+          margin-left: 0.75rem;
+          letter-spacing: 1px;
+          font-size: 2rem;
+          font-family: var(--font-brand);
+        }
+        div {
+          padding: 0rem 1rem;
+          img {
+            width: 100px;
+            margin-right: 1rem;
+          }
+          div {
+            h1 {
+              letter-spacing: 1px;
+              font-size: 4rem;
+              font-family: var(--font-brand);
+            }
+            p {
+              letter-spacing: 0.5px;
+              font-size: 1.15rem;
+              font-family: var(--font-brand);
+            }
+          }
+        }
+      }
+    }
+
+    article.about-article {
+      width: 100%;
+      padding: 2rem 0rem 0rem;
+      h2 {
+        font-family: "Bebas Neue";
+        font-size: 2rem;
+        letter-spacing: 1px;
+      }
+      p {
+        position: relative;
+        padding: 2rem 4rem;
+        align-self: center;
+
+        font-family: "Poppins";
+        isolation: isolate;
+      }
+
+      p::before {
+        content: '"';
+        font-family: "Quicksand";
+        color: #ff7e00;
+        position: absolute;
+        z-index: -1;
+        font-size: 20rem;
+        font-weight: 800;
+        top: -40%;
+        left: 5%;
+        opacity: 0.1;
+      }
+    }
+
+    section.about-gallery {
+      margin: 2rem 0rem;
+      h2 {
+        margin: 2rem;
+        text-align: center;
+        font-family: var(--font-brand);
+        font-size: 2rem;
+        letter-spacing: 1px;
+      }
+
+      div.image-gallery {
+        width: 100%;
+        flex-wrap: wrap;
+        img {
+          width: 50%;
+          height: 140px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    section.about-cards {
+      flex-direction: column;
+      figure.about-cards {
+        margin: 1rem 0rem;
+        img {
+          width: 300px;
+          height: 160px;
+          object-fit: cover;
+        }
+        figcaption {
+          padding: 1rem;
+          background-color: #f2f7f2;
+          h3 {
+            font-family: "Bebas Neue";
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+
+    div.about-service {
+      figure.about-service {
+        flex-direction: column;
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
+        figcaption {
+          background-color: #f2f7f2;
+          padding: 2rem;
+          width: 100%;
+          h2 {
+            font-family: var(--font-brand);
+            font-size: 2rem;
+            letter-spacing: 1px;
+          }
+          p {
+            margin: 1rem 0rem;
+            font-family: "Poppins";
+            font-size: 1rem;
+          }
+        }
+      }
+      button.contact-btn {
+        margin: 2rem 0rem;
+      }
+    }
+  }
 }
