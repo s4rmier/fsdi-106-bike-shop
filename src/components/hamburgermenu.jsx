@@ -77,14 +77,6 @@ export default function HamburgerMenu(props) {
             </li>
           </ul>
         </div>
-        <div className="subscribe-label">
-          <h2>Subscribe</h2>
-          <p>Subscribe for latest news, events, and promotions!</p>
-        </div>
-        <div className="subscribe-form flex-row justify">
-          <input type="text" placeholder="Enter your e-mail" />
-          <button className="button">Submit</button>
-        </div>
       </div>
     </div>
   );

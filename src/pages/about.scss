@@ -1,19 +1,64 @@
+#about {
+  section.about-hero {
+    background-image: url(/public/images/about-wp.jpg);
+    background-position: center;
+
+    div.tag-container {
+      padding: 1rem 0rem;
+      background: rgba($color: #f2f7f2, $alpha: 0.25);
+      backdrop-filter: blur(5px);
+      width: 100%;
+      letter-spacing: 1px;
+      h3 {
+        font-family: var(--font-brand);
+      }
+      div {
+        div {
+          h1 {
+            letter-spacing: 1px;
+            font-family: var(--font-brand);
+          }
+          p {
+            letter-spacing: 0.5px;
+            font-family: var(--font-brand);
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 960px) {
   #about {
     padding-top: 3rem;
     section.about-hero {
-      height: 60vh;
-      background-image: url(/public/images/about-wp.jpg);
-      background-size: cover;
-      background-position: center;
-      h1 {
-        margin-left: 30%;
-        padding: 3rem;
-        font-size: 4rem;
-        font-family: var(--font-brand);
-        color: transparent;
-        -webkit-text-stroke: 1px #18114a;
-        letter-spacing: 1px;
+      min-height: 80vh;
+      padding: 2rem 0rem;
+      div.tag-container {
+        padding: 1rem 0rem;
+        h3 {
+          margin-left: 0.75rem;
+          letter-spacing: 1px;
+          font-size: 2rem;
+        }
+        div {
+          img {
+            width: 100px;
+            margin-right: 1rem;
+          }
+          div {
+            h1 {
+              letter-spacing: 1px;
+              font-size: 4rem;
+              font-family: var(--font-brand);
+            }
+            p {
+              letter-spacing: 0.5px;
+              font-size: 1.5rem;
+              font-family: var(--font-brand);
+            }
+          }
+        }
       }
     }
   }
