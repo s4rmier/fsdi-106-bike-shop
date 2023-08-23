@@ -1,1 +1,20 @@
-/*# sourceMappingURL=about.css.map */
+@media screen and (min-width: 960px) {
+  #about {
+    padding-top: 3rem;
+  }
+  #about section.about-hero {
+    height: 60vh;
+    background-image: url(/public/images/about-wp.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #about section.about-hero h1 {
+    margin-left: 30%;
+    padding: 3rem;
+    font-size: 4rem;
+    font-family: var(--font-brand);
+    color: transparent;
+    -webkit-text-stroke: 1px #18114a;
+    letter-spacing: 1px;
+  }
+}/*# sourceMappingURL=about.css.map */
