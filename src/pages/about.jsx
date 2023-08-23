@@ -15,6 +15,17 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <article className="about-article container flex-col align">
+        <h2>Mission</h2>
+        <p>
+          At Urban Bikes Co, our mission is to empower urban riders with
+          meticulously crafted bicycles that effortlessly blend innovation,
+          style, and sustainability. Through our commitment to redefining city
+          commuting, we strive to inspire a healthier, greener, and more
+          connected urban lifestyle for all.
+        </p>
+      </article>
     </main>
   );
 }
