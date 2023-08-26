@@ -54,7 +54,7 @@ export default function Cart() {
           </ul>
         </div>
       ) : (
-        <div>
+        <div className="shop-now">
           <h1>Your cart is empty</h1>
           <Link to="/catalog">
             <button className="shop-now button">Shop Now</button>
