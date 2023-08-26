@@ -1,6 +1,5 @@
 #about section.about-hero {
   background-image: url(/public/images/about-wp.jpg);
-  background-position: center;
   background-size: cover;
 }
 
@@ -30,6 +29,7 @@
   #about section.about-hero {
     min-height: 80vh;
     padding: 2rem 0rem;
+    background-position: 50% 25%;
   }
   #about section.about-hero div.tag-container {
     padding: 1rem 0rem;
@@ -145,6 +145,7 @@
     padding-top: 3rem;
   }
   #about section.about-hero {
+    background-position: center;
     min-height: 80vh;
   }
   #about section.about-hero div.tag-container {

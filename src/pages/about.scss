@@ -1,7 +1,6 @@
 #about {
   section.about-hero {
     background-image: url(/public/images/about-wp.jpg);
-    background-position: center;
     background-size: cover;
   }
 }
@@ -35,6 +34,7 @@
     section.about-hero {
       min-height: 80vh;
       padding: 2rem 0rem;
+      background-position: 50% 25%;
       div.tag-container {
         padding: 1rem 0rem;
         h3 {
@@ -163,8 +163,8 @@
 @media screen and (max-width: 959px) {
   #about {
     padding-top: 3rem;
-
     section.about-hero {
+      background-position: center;
       min-height: 80vh;
       div.tag-container {
         background: rgba($color: #f2f7f2, $alpha: 0.5);
