@@ -2,7 +2,6 @@ import Product from "../components/product";
 import { useEffect, useState } from "react";
 import DataService from "../services/dataService";
 import "./catalog.css";
-import { getActiveElement } from "@testing-library/user-event/dist/utils";
 
 export default function Catalog() {
   const [products, setProducts] = useState([]);
