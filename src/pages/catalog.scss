@@ -124,6 +124,12 @@
 @media screen and (max-width: 959px) {
   #catalog {
     padding-top: 5rem;
+    div.filters {
+      div.filter-button-set {
+        flex-wrap: wrap;
+      }
+    }
+
     div.catalog-container {
       flex-direction: column;
 

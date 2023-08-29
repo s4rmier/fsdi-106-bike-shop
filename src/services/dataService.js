@@ -1,3 +1,5 @@
+import axios from "axios";
+
 let catalog = [
   {
     name: "Trek Top Fuel 9x9 XX1 AXS PRO EVO PLUS",
@@ -65,21 +67,28 @@ let catalog = [
     stars: "4.0",
     _id: "6",
   },
-  // {
-  //   name: "Specialized Stumpjumper EVO",
-  //   price: 5400,
-  //   dcprice: 5000,
-  //   image: "stumpjumperevo.jpg",
-  //   isDiscounted: true,
-  //   sizes: "S/M/L/XL",
-  //   stars: "4.3",
-  //   _id: "7",
-  // },
 ];
 
 class DataService {
-  getProducts() {
-    return catalog;
+  serverURL = "http://127.0.0.1:5000";
+
+  async getProducts() {
+    // uncomment next line to work with local data
+    // return catalog
+
+    // server call
+    const response = await axios.get(this.serverURL + "/api/products");
+    return response.data;
+  }
+
+  async getCategories() {
+    const response = await axios.get(this.serverURL + "/api/categories");
+    return response.data;
+  }
+
+  async saveProduct(prod) {
+    const response = await axios.post(this.serverURL + "/api/products", prod);
+    return response.data;
   }
 }
 

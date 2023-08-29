@@ -32,4 +32,32 @@
 }
 #admin div.form-container button.button {
   margin: 1rem 0rem;
+}
+#admin div.product-list ul {
+  margin: 2rem;
+  margin-top: 0;
+}
+#admin div.product-list ul h2 {
+  font-family: var(--font-brand);
+  margin: 2rem 0rem;
+  text-align: center;
+  font-size: 2rem;
+}
+#admin div.product-list ul li.product-item img {
+  width: 50px;
+  margin: 0rem 0.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#admin div.product-list ul li.product-item h2 {
+  font-family: var(--font-brand);
+  margin: 0rem 0.5rem;
+}
+#admin div.product-list ul li.product-item h3 {
+  font-family: var(--font-brand);
+  margin: 0rem 0.5rem;
+}
+#admin div.product-list ul li.product-item h2,
+#admin div.product-list ul li.product-item h3 {
+  font-weight: 400;
 }/*# sourceMappingURL=admin.css.map */

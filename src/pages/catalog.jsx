@@ -2,26 +2,28 @@ import Product from "../components/product";
 import { useEffect, useState } from "react";
 import DataService from "../services/dataService";
 import "./catalog.css";
+import { getActiveElement } from "@testing-library/user-event/dist/utils";
 
 export default function Catalog() {
   const [products, setProducts] = useState([]);
   const [category, setCategory] = useState([]);
   const [filteredProd, setFiltered] = useState([]);
+  let service = new DataService();
 
   useEffect(function () {
     loadCatalog();
     loadCategories();
   }, []);
 
-  function loadCatalog() {
-    let service = new DataService();
-    let prods = service.getProducts();
+  async function loadCatalog() {
+    let prods = await service.getProducts();
     setProducts(prods);
     setFiltered(prods);
   }
 
-  function loadCategories() {
-    let categories = ["Trek", "Fuel", "Specialized", "Sale"];
+  async function loadCategories() {
+    let categories = await service.getCategories();
+    categories.push("Sale");
     setCategory(categories);
   }
 
@@ -47,8 +49,7 @@ export default function Catalog() {
     <main id="catalog" className="catalog">
       <div className="filters flex-row align justify">
         <h3>Filter: </h3>
-        <div className="filter-button-set">
-          {" "}
+        <div className="filter-button-set flex-row align justify">
           <button onClick={resetFilter} className="button">
             Reset
           </button>

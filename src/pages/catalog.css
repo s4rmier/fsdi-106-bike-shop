@@ -107,6 +107,9 @@
   #catalog {
     padding-top: 5rem;
   }
+  #catalog div.filters div.filter-button-set {
+    flex-wrap: wrap;
+  }
   #catalog div.catalog-container {
     flex-direction: column;
   }

@@ -1,13 +1,30 @@
+import { useEffect, useState } from "react";
 import "./admin.css";
-import { useState } from "react";
+import DataService from "../services/dataService";
 
 export default function Admin() {
   const [product, setProduct] = useState({
-    title: "",
-    category: "",
-    image: "",
+    name: "",
+    make: "",
     price: "",
+    dcprice: 0,
+    image: "",
+    isDiscounted: false,
+    sizes: "",
+    stars: "",
   });
+
+  useEffect(function () {
+    loadCatalog();
+  }, []);
+
+  const [catalogItems, setCatalogItems] = useState([]);
+
+  async function loadCatalog() {
+    let service = new DataService();
+    let prods = await service.getProducts();
+    setCatalogItems(prods);
+  }
 
   function handleInputChange(e) {
     console.log(e.target.value);
@@ -23,6 +40,11 @@ export default function Admin() {
 
   function saveProduct() {
     console.log(product);
+    let productCopy = { ...product };
+    productCopy.price = parseFloat(productCopy.price);
+    let service = new DataService();
+    service.saveProduct(productCopy);
+
     clearForm();
   }
 
@@ -44,9 +66,9 @@ export default function Admin() {
         <div>
           <label>Title: </label>
           <input
-            value={product.title}
+            value={product.name}
             onChange={handleInputChange}
-            name="title"
+            name="name"
             type="text"
           />
         </div>
@@ -82,6 +104,19 @@ export default function Admin() {
             Save Product
           </button>
         </div>
+      </div>
+      <div className="product-list">
+        <ul className="flex-col">
+          <h2>Available Products</h2>
+          {catalogItems.map((product) => (
+            <li key={product._id} className="product-item flex-row align">
+              <img src={`/images/${product.image}`} alt="" />
+              <h2>{product.name}</h2>
+              <h3>${product.price}</h3>
+              <button className="button">X</button>
+            </li>
+          ))}
+        </ul>
       </div>
     </main>
   );
